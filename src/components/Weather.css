@@ -18,3 +18,16 @@
     justify-content: center;
     gap: 10px;
 }
+.searchBar input{
+    padding: 10px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    color: aliceblue;
+    background-color: #ebfffe;
+}
+.searchBar img{
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
