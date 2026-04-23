@@ -9,6 +9,11 @@ const Weather = () => {
    const inputRef = useRef();
 
    const search = async (city) => {
+      if(city===""){
+         alert("Please enter a city name");
+         return;
+      } 
+      
     try {
       // Fetch weather data from OpenWeatherMap API
       const url= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3f81291a41ee7debdf8dd0390425e6cc&units=metric`;
