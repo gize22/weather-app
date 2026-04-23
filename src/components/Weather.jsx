@@ -1,12 +1,12 @@
-import react from './react'
-import './weather.css'
+import React from 'react';
+import './weather.css';
 
 const Weather = () => {
   return (
     <div>
-      <h1> weather</h1>
-     </div>
-  )
-}
+      <h1>Weather</h1>
+    </div>
+  );
+};
 
-export default Weather
+export default Weather;
