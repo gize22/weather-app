@@ -1,11 +1,12 @@
-import React, { useState,useEffect, } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 import './Weather.css';
 import searchIcon from '../assets/search-icon.jpg';
 
 
 const Weather = () => {
 
-   const [weather, setWeather] = useState(null);    
+   const [weather, setWeather] = useState(null);
+   const inputRef = useRef();
 
    const search = async (city) => {
     try {
@@ -45,7 +46,7 @@ const Weather = () => {
   return (
     <div className='weather'>
       <div className="searchBar">
-         <input type='text' placeholder='search'/> 
+         <input  ref={inputRef} type='text' placeholder='search'/> 
          <img className='img' src={searchIcon} alt='' />
       </div>
       <img className='weatherIcon' src={weather.icon} alt='' />
